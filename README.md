@@ -30,7 +30,7 @@ Your report should include the following:
     -	Briefly explain your solution and any design choices you made that weren’t specified in the instructions.
     -	Clearly describe any external sources that were used (e.g. websites or AI tools) and how they were used.
 -	Discussion: 
-    -	What is the shape and data type of each provided matrix?  What are the rows and columns of the matrices?  What are the ranges?  How many classes are there and what are the classes (the answer is in the paper linked above).   How many examples are provided of each class in the train and test splits?  
+    -	What is the shape and data type of each provided matrix?  What are the rows and columns of the matrices?  What are the ranges?  How many classes are there and what are the classes? (The answer is in the paper linked above.)   How many examples are provided of each class in the train and test splits?  
     -	Compare the two PyTorch models in terms of test performance and overfitting.  Also compare your PyTorch results to your scikit-learn results.
 
 ### Deliverables
