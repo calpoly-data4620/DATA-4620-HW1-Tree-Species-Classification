@@ -12,11 +12,11 @@ The provided notebook downloads and unpacks the data into features labels in a t
 
 ### Instructions
 1.	Inspect the data.  See the first discussion prompt below.
-2.	Pre-process the data.  You will pre-process the features using [Principal Components Analysis](https://scikit-learn.org/stable/modules/generated/sklearn.decomposition.PCA.html) (PCA) to reduce the number of dimensions, making the learning process easier.  Fit the PCA model to the training features and apply it to both the train and test features.  Use 32 components and make sure to set whiten=True.  You will use the result of PCA as the input to your classifiers, not the original raw hyperspectral data.
+2.	Pre-process the data.  You will pre-process the features using [Principal Components Analysis](https://scikit-learn.org/stable/modules/generated/sklearn.decomposition.PCA.html) (PCA) to reduce the number of dimensions, making the learning process easier.  Fit the PCA model to the training features and apply it to both the train and test features.  Use 32 components and make sure to set `whiten=True`.  You will use the result of PCA as the input to your classifiers, not the original raw hyperspectral data.
 3.	Classifiers using scikit-learn. Make a linear classifier and a neural network (NN) classifier using scikit-learn and calculate accuracy on the test set for each classifier.  The N should have three layers and a hidden layer size of 100. 
 4.	Classifiers using PyTorch. Now implement the linear classifier and NN using PyTorch.  You will need to implement the following steps:
 
-    a.	Create a TensorDataset and DataLoader for the train and test splits.  Use a batch size of 32.  The train loader should use random shuffling but the test loader should not.
+    a.	Create a `TensorDataset` and `DataLoader` for the train and test splits.  Use a batch size of 32.  The train loader should use random shuffling but the test loader should not.
 
     b.	Create a function to calculate model accuracy, given the model and data loader.  The function should iterate through the batches in the loader, add up the number of correct predictions in each batch, divide the sum by the total number of predictions, and return the result.
 
